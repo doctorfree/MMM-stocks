@@ -3,7 +3,7 @@ The `stocks` module is a <a href="https://github.com/MichMich/MagicMirror">Magic
 This module displays a scrolling stocks ticker on your MagicMirror.
 
 ## ℹ️ How to use this module
-1. clone this repo with the following command: `git clone https://github.com/Elaniobro/MMM-stocks.git`
+1. clone this repo with the following command: `git clone https://github.com/doctorfree/MMM-stocks.git`
 1. install all the npm modules with either `yarn install` or `npm install`
 1. update your [Magic Mirror Config](https://github.com/MichMich/MagicMirror/blob/master/config/config.js.sample), by adding the following object:
 To use this module, add it to the modules array in the `config/config.js` file:
@@ -40,9 +40,13 @@ modules: [
 You will need to sign up for the iexapis cloud API. To get a key, please visit their website: [cloud iexapis](https://cloud.iexapis.com).
 
 ## ✨ Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/elaniobro/mmm-stocks/issues)
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doctorfree/MMM-stocks/issues)
 
-## 👨🏻 Author
+## 👨🏻 Authors
+**Ronald Record**
+* [github](https://github.com/doctorfree)
+* [twitter](https://twitter.com/ronrecord)
+
 **Elan Trybuch**
 * [github](https://www.github.com/elaniobro)
 * [twitter](https://www.twitte.com/elaniobro)

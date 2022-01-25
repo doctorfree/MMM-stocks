@@ -1,7 +1,11 @@
 /* Magic Mirror
  * Module: stocks
  *
- * By Alex Yakhnin https://github.com/alexyak & Elan Trybuch https://github.com/elaniobro
+ * Authors:
+ *    Alex Yakhnin https://github.com/alexyak
+ *    Elan Trybuch https://github.com/elaniobro
+ *    Ronald Record https://github.com/doctorfree
+ *
  * MIT Licensed.
  */
 var NodeHelper = require('node_helper');

@@ -1,7 +1,7 @@
 {
   "name": "mmm-stocks",
-  "version": "1.0.0",
-  "description": "stock ticker module to be used by magic mirror",
+  "version": "1.0.1",
+  "description": "Stock ticker module to be used by MagicMirror",
   "main": "stocks.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,31 +9,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elaniobro/mmm-stocks.git"
+    "url": "git+https://github.com/doctorfree/MMM-stocks.git"
   },
   "keywords": [
     "stock",
     "stocks",
     "magic",
     "mirror",
+    "magicmirror",
     "module"
   ],
   "author": {
-    "name": "Elan Trybuch",
-    "email": "elan@trybuch.com",
-    "url": "https://elan.trybuch.com"
+    "name": "Ronald Record",
+    "email": "ronaldrecord@gmail.com",
+    "url": "https://github.com/doctorfree"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Elaniobro/mmm-stocks/issues"
+    "url": "https://github.com/doctorfree/MMM-stocks/issues"
   },
-  "homepage": "https://github.com/Elaniobro/mmm-stocks#readme",
+  "homepage": "https://github.com/doctorfree/MMM-stocks#readme",
   "dependencies": {
     "request": "latest"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "husky": "^3.0.0"
+    "eslint": "^6.8.0",
+    "husky": "^3.0.1"
   },
   "husky": {
     "hooks": {
