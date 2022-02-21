@@ -17,7 +17,7 @@ module.exports = NodeHelper.create({
         console.log('MMM-stocks: started'); /*eslint-disable-line*/
     },
 
-    getStocks: function (url) {
+    getStocks: async function (url) {
         var self = this;
 
         try {
@@ -31,7 +31,7 @@ module.exports = NodeHelper.create({
         };
     },
 
-    getStocksMulti: function (urls) {
+    getStocksMulti: async function (urls) {
         var self = this;
         var count = urls.length;
         var counter = 0;
