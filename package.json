@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/doctorfree/MMM-stocks#readme",
   "dependencies": {
-    "request": "latest"
+    "got": "latest"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

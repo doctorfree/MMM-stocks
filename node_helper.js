@@ -9,7 +9,7 @@
  * MIT Licensed.
  */
 var NodeHelper = require('node_helper');
-var request = require('request');
+var got = require('got');
 
 module.exports = NodeHelper.create({
 
@@ -20,14 +20,15 @@ module.exports = NodeHelper.create({
     getStocks: function (url) {
         var self = this;
 
-        request({ url: url, method: 'GET' }, function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                var result = JSON.parse(body);
-
+        try {
+	        const response = await got(url, { responseType: 'json' });
+            if (response.statusCode == 200) {
+                var result = JSON.parse(response.body);
                 self.sendSocketNotification('STOCKS_RESULT', result);
             }
-        });
-
+        } catch (error) {
+	        console.log('Got error:', error);
+        };
     },
 
     getStocksMulti: function (urls) {
@@ -38,20 +39,19 @@ module.exports = NodeHelper.create({
 
         urls.forEach(url => {
 
-            request({ url: url, method: 'GET' }, function (error, response, body) {
-                if (!error && response.statusCode == 200) {
-                    stockResults.push(JSON.parse(body));
+            try {
+	            const response = await got(url, { responseType: 'json' });
+                if (response.statusCode == 200) {
+                    stockResults.push(JSON.parse(response.body));
                     counter++;
-
                     if (counter == count - 1) {
                         self.sendSocketNotification('STOCKS_RESULT', stockResults);
                     }
-
-                } else {
-                    var err = error;
-                    throw new Error(err);
-                }
-            });
+                };
+            } catch (error) {
+                var err = error;
+                throw new Error(err);
+            };
         });
     },
 
